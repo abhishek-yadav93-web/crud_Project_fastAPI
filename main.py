@@ -7,7 +7,6 @@ from typing import List
 Base.metadata.create_all(bind=engine)
  
 app = FastAPI()
- 
 # Dependency: provides a DB session per request
 def get_db():
     db = SessionLocal()
